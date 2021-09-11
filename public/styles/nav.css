@@ -1,26 +1,34 @@
+/* Navigation Bar General */
 nav {
   background: #4056A1;
   height: 120px;
   padding: 1.5em;
+  display:flex;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-nav ul {
-  list-style: none;
-}
-
+/* TWEETER Icon */
 #logo {
   font-family: "Bungee", cursive;
   font-size: 150%;
   color: #FFFF;
-  
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
-nav i {
+.nav-left {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  color: red;
+  align-items: flex-end;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #FFFF;
+}
+
+/* fas fa-angle-double-down Icon */
+i {
+  color: #66FCF1;
 }
