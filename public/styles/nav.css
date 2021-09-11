@@ -1,8 +1,7 @@
 /* Navigation Bar General */
 nav {
   background: #0B0C10;
-  background-image: url(http://www.transparenttextures.com/patterns/gun-metal.png);
-  height: 120px;
+  background-image: url("https://www.transparenttextures.com/patterns/navy.png");  height: 120px;
   padding: 1.5em;
   display:flex;
   justify-content: space-between;
@@ -11,9 +10,9 @@ nav {
 
 /* TWEETER Icon */
 #logo {
+  color: #66FCF1;
   font-family: "Bungee", cursive;
   font-size: 150%;
-  color: #66FCF1;
 }
 
 .nav-left {
@@ -22,11 +21,11 @@ nav {
 }
 
 .nav-right {
+  color: #45A29E;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: space-between;
-  color: #45A29E;
+  align-items: flex-end;
 }
 
 /* fas fa-angle-double-down Icon */
