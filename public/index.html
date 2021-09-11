@@ -7,8 +7,10 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     
-    <!-- Fonts -->
-    <!-- Bungee -->
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bungee Font -->
     <!-- Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet"/>
     
@@ -21,12 +23,17 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span class = "logo">Tweeter</span>
+      <ul class="nav-container">
+        <span id = "logo">Tweeter</span>
+        <!-- <span class = "new-tweet">Write a new tweet</span> -->
+        <i class="fas fa-angle-double-down"></i>
+      </ul>
     </nav>
 
     <!-- Page-specific (main) content here -->
