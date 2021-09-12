@@ -77,10 +77,10 @@
         <h2>New Tweet</h2>
         <form method="POST" action="/tweets">
           <label for="tweet-text"></label>
-          <textarea name="text" id="tweet-box" placeholder="Enter Text"></textarea>
-          <div>
+          <textarea name="text" id="text-box" placeholder="Enter Text"></textarea>
+          <div class="text-area">
             <button id = "tweet-button" name="tweet-button" type="submit">Tweet</button>
-            <output id = "counter" name="counter" class="counter" for="tweet-text">140</output>
+            <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>

@@ -2,35 +2,45 @@ main {
   font-family: "Bungee";
 }
 
+/* Title - What are you on about? */
 .tweet-title {
   font-size: 100%;
 }
 
+/* General New-Tweet class */
 .new-tweet {
-  font-size: 100%;
+  font-size: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-self: center;
 }
 
+/* New Tweet - Title area */
 .new-tweet h2 {
   border-bottom:2px solid #45A29E;
 }
 
+/* Tweet text entry area */
+#text-box {
+  width: 100%;
+  padding: 10px;
+  background-color: #b5f7f7;
+}
+
+/* Tweet submit button and Counter */
+.text-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px; 
+}
+
+/* Tweet submit button - specific */
 main button {
   font-weight: bold;
   background-color: #45A29E;
   border-radius: 8px;
   padding: 8px;
   margin-top: 10px;
-}
-
-#counter {
-}
-
-#tweet-box {
-  width: 100%;
-  padding: 10px;
-  background-color: #b5f7f7;
 }
