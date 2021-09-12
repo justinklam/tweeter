@@ -40,7 +40,7 @@
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
+    <!-- NAV BAR (fixed) -->
     <nav>
       <div class="nav-left">
         <span id="logo">Tweeter</span>
@@ -59,7 +59,7 @@
       </div>
 
       <br />
-
+      <!-- HEADER PROFILE PICTURE NAME -->
       <div class="header-ex-text">
         <h2>Example</h2>
       </div>
@@ -67,7 +67,23 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h2>What are you humming about?</h2>
+
+      <div class="tweet-title">
+        <h2>What are you humming about?</h2>
+      </div>
+
+      <section class="new-tweet">
+        <h2>New Tweet</h2>
+        <form method="POST" action="/tweets">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+
     </main>
   </body>
 </html>
