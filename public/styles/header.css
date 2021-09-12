@@ -1,11 +1,12 @@
 #main-header {
   height: 400px;
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Header Profile Picture location */
 .header-ex {
   height: 165px;
   display: flex;
@@ -14,6 +15,7 @@
   align-items: center;
 }
 
+/* Header Profile Picture Name */
 .header-ex-text{
   color: #66FCF1;
   display: flex;
