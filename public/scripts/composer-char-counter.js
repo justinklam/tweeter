@@ -1,5 +1,4 @@
 $(document).ready(function() {
-console.log(`Page has loaded`)
 
   $('#text-box').on('keyup', function(event) {
     // stores form input
@@ -23,10 +22,5 @@ console.log(`Page has loaded`)
     }
 
   });
-
-  // $("#text-box").on("input", function() {
-  //   $("output").val(`Text -----`)
-  // });
-
 });
 
