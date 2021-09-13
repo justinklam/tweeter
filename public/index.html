@@ -37,7 +37,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="./scripts/client.js"></script>
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -80,7 +82,7 @@
           <textarea name="text" id="text-box" placeholder="Enter Text"></textarea>
           <div class="text-area">
             <button id = "tweet-button" name="tweet-button" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output id = "counter" name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
