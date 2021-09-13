@@ -16,7 +16,7 @@ $(document).ready(function() {
     $textCount.html(charLeft);
 
     if (charLeft < 0) {
-      $textCount.css('color', 'red');
+      $textCount.css('color', '#BC2100');
     } else {
       $textCount.css('color', '#45A29E');
     }
