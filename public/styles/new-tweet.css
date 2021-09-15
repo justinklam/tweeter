@@ -30,6 +30,10 @@ main {
   resize: none;
 }
 
+#text-box:hover {
+  box-shadow: 3px 3px #45A29E
+}
+
 /* Tweet submit button and Counter */
 .text-area {
   display: flex;
@@ -45,4 +49,8 @@ main button {
   border-radius: 8px;
   padding: 8px;
   margin-top: 10px;
+}
+
+main button:hover {
+  box-shadow: 1px 1px #b5f7f7
 }
