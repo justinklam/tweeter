@@ -1,8 +1,12 @@
 /* Navigation Bar General */
 nav {
   background: #0B0C10;
+  opacity: 0.8;
   background-image: url("https://www.transparenttextures.com/patterns/navy.png");  height: 120px;
   padding: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display:flex;
   justify-content: space-between;
   z-index: 1;
