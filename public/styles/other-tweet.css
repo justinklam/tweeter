@@ -1,0 +1,35 @@
+.other-tweets {
+  height: 165px;
+  padding: 15px;
+  border: 3px solid #45A29E;
+  margin-top: 80px;
+  /* padding: 50px; */
+  /* box-sizing: content-box; */
+}
+
+.other-tweet {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.other-tweet header {
+  display: block;
+  padding: 0.5em 0;
+}
+
+.other-tweet-body {
+  display: block;
+  padding: 0.5em 0;
+  border-bottom:1px solid #45A29E;
+}
+
+.other-tweet-footer {
+  display: block;
+}
+
+#message-icon {
+  display: inline-block;
+  margin: 0 0,5rem;
+  position: absolute; right: 0.5rem 
+}
