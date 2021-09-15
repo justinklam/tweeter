@@ -24,7 +24,8 @@ main {
 /* Tweet text entry area */
 #text-box {
   width: 100%;
-  padding: 55px;
+  height: 165px;
+  padding: 15px;
   background-color: #b5f7f7;
   resize: none;
 }

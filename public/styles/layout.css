@@ -27,7 +27,7 @@ body {
 /* Main area - Container class */
 .container {
   font-size: 100%;
-  width: 100;
+  width: 40%;
   justify-content: center;
   align-self: center;
 }
