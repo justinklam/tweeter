@@ -30,6 +30,7 @@ main {
   resize: none;
 }
 
+/* Tweet text entry area hover effect */
 #text-box:hover {
   box-shadow: 3px 3px #45A29E
 }
@@ -51,6 +52,7 @@ main button {
   margin-top: 10px;
 }
 
+/* Tweet submit button - hover effect */
 main button:hover {
   box-shadow: 1px 1px #b5f7f7
 }

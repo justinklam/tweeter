@@ -1,3 +1,4 @@
+/* Other-Tweet section */
 .other-tweets {
   height: 165px;
   padding: 15px;
@@ -5,56 +6,67 @@
   margin-top: 80px;
 }
 
+/* other-tweets - hover effect */
+.other-tweets:hover {
+  box-shadow: 3px 3px #45A29E
+}
+
+/* other-tweet article area */
 .other-tweet {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
+/* other-tweet header area */
 .other-tweet header {
   display: block;
   padding: 0.5em 0;
 }
 
+/* header - user-name area */
+.user-name {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+/* header - tweeter-handle area */
 .tweeter-handle {
   display: inline-block;
   margin: 0 0.5rem;
   position: absolute; right: 0.5rem;
 }
 
-.user-name {
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-
+/* body area - area for message */
 .other-tweet-body {
   display: block;
   padding: 0.5em 0;
   border-bottom:1px solid #45A29E;
 }
 
+/* other-tweet footer area */
 .other-tweet-footer {
   display: block;
 }
 
+/* footer - message icons */
 .message-icon {
   display: inline-block;
   margin: 0 0.5rem;
   position: absolute; right: 0.5rem;
 }
 
-.other-tweets:hover {
-  box-shadow: 3px 3px #45A29E
-}
-
+/* icon-flag - hover effect */
 #icon-flag:hover {
   color: white;
 }
 
+/* icon-retweet - hover effect */
 #icon-retweet:hover {
   color: white;
 }
 
+/* icon-heart - hover effect */
 #icon-heart:hover {
   color: rgb(248, 160, 175);
 }
