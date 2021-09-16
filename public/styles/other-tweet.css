@@ -16,6 +16,17 @@
   padding: 0.5em 0;
 }
 
+.tweeter-handle {
+  display: inline-block;
+  margin: 0 0.5rem;
+  position: absolute; right: 0.5rem;
+}
+
+.user-name {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
 .other-tweet-body {
   display: block;
   padding: 0.5em 0;
