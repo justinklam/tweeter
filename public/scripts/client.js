@@ -1,16 +1,10 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function () {
 
   const data = [
     {
       user: {
         name: "Newton",
-        avatars: "https://i.imgur.com/73hZDYK.png",
+        avatars: "https://img.icons8.com/nolan/30/fox.png",
         handle: "@SirIsaac",
       },
       content: {
@@ -21,7 +15,7 @@ $(document).ready(function () {
     {
       user: {
         name: "Descartes",
-        avatars: "https://i.imgur.com/nlhLi3I.png",
+        avatars: "https://img.icons8.com/nolan/30/black-jaguar.png",
         handle: "@rd",
       },
       content: {
@@ -33,51 +27,55 @@ $(document).ready(function () {
 
   const $tweet = $(`<article class="tweet">Hello world</article>`);
 
-  const renderTweets = function(tweets) {
-    let tweetMarkup
-    for (let tweet of tweets) {
-      
+  const renderTweets = function(dataTweet) {
+    for (const tweetDetails of dataTweet) {
+      const tweetData = createTweetElement(tweetDetails)
+      $(".other-tweets").append(tweetData); 
     }
-    $('section.other-tweets').html(tweetMarkup)
-  }
+  };
   
-  const createTweetElement = function (tweet) {
-    return `<article class="tweet">${tweet.content.text}</article>
-    `
-    
+  const createTweetElement = function(tweet) {
+    const timeStamp = timeago.format(tweet.created_at);
 
+    return `
+    
+    <article class="other-tweet">
+      <header class="other-tweet-header">
+        <img src=${tweet.user.avatars}/>
+        <div class="user-name"><b>${tweet.user.name}</b></div>
+        <div class="tweeter-handle">${tweet.user.handle}</div>
+      </header>
+
+    <div class="other-tweet-body">
+      ${tweet.content.text}
+    </div>
+
+    <footer class="other-tweet-footer"><b>${timeStamp}</b>
+      <div class="message-icon">
+        <i id="icon-flag" class="fas fa-flag"></i>
+        <i id="icon-retweet" class="fas fa-retweet"></i>
+        <i id="icon-heart" class="fas fa-heart"></i>
+      </div>
+    </footer>
+
+    </article>`
   };
 
+
   renderTweets(data);
-  
-  // const $tweet = createTweetElement(data);
-  // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks like
-  $(".container").append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 });
 
 // TIME AGO
-const timeStamp = timeago.format(1631482946098);
-document.getElementById("other-tweet-footer").innerHTML = timeStamp;
+// document.getElementById("other-tweet-footer").innerHTML = timeStamp;
 
-// const testTweet = {
-//   "user": {
-//     "name": "Newton",
-//     "avatars": "https://i.imgur.com/73hZDYK.png",
-//     "handle": "@SirIsaac"
-//   },
-//   "content": {
-//     "text": "If I have seen further it is by standing on the shoulders of giants"
-//   },
-//   "created_at": 1631482946098
-// };
+// $(document).ready(function() {
+//   $.getJSON( "../server/data-files/initial-tweets.json", function( data ) {
+//   })
 
-$(document).ready(function() {
-  console.log(`hello-----`)
-  $.getJSON( "../server/data-files/initial-tweets.json", function( data ) {
-    // $.getJSON( "./scripts/1.json", function( data ) {
+// });
 
-  console.log('data ------', data)
-  }
-
-// )});
+/*
+ * Client-side JS logic goes here
+ * jQuery is already loaded
+ * Reminder: Use (and do all your DOM work in) jQuery's document ready function
+ */

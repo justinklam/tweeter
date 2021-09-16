@@ -1,14 +1,8 @@
 /* Other-Tweet section */
 .other-tweets {
-  height: 165px;
+  /* height: 165px; */
   padding: 15px;
-  border: 3px solid #45A29E;
-  margin-top: 80px;
-}
-
-/* other-tweets - hover effect */
-.other-tweets:hover {
-  box-shadow: 3px 3px #45A29E
+  margin-top: 30px;
 }
 
 /* other-tweet article area */
@@ -16,6 +10,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  border: 3px solid #45A29E;
+  margin-top: 30px;
+  padding: 8px;
+}
+
+/* other-tweet - hover effect */
+.other-tweet:hover {
+  box-shadow: 3px 3px #45A29E
 }
 
 /* other-tweet header area */
