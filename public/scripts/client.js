@@ -1,29 +1,29 @@
 $(document).ready(function () {
 
-  const data = [
-    {
-      user: {
-        name: "Deckard Cain",
-        avatars: "https://img.icons8.com/nolan/30/fox.png",
-        handle: "@Cain",
-      },
-      content: {
-        text: "Stay awhile and listen!",
-      },
-      created_at: 1631844278000,
-    },
-    {
-      user: {
-        name: "Solaire",
-        avatars: "https://img.icons8.com/nolan/30/black-jaguar.png",
-        handle: "@SolOfAstoria",
-      },
-      content: {
-        text: "Praise the Sun!",
-      },
-      created_at: 1631844220000,
-    },
-  ];
+  // const data = [
+  //   {
+  //     user: {
+  //       name: "Deckard Cain",
+  //       avatars: "https://img.icons8.com/nolan/30/fox.png",
+  //       handle: "@Cain",
+  //     },
+  //     content: {
+  //       text: "Stay awhile and listen!",
+  //     },
+  //     created_at: 1631844278000,
+  //   },
+  //   {
+  //     user: {
+  //       name: "Solaire",
+  //       avatars: "https://img.icons8.com/nolan/30/black-jaguar.png",
+  //       handle: "@SolOfAstoria",
+  //     },
+  //     content: {
+  //       text: "Praise the Sun!",
+  //     },
+  //     created_at: 1631844220000,
+  //   },
+  // ];
 
   const $tweet = $(`<article class="tweet">Hello world</article>`);
 
@@ -64,5 +64,14 @@ $(document).ready(function () {
     `
   };
 
-  renderTweets(data);
+  const loadTweets = function() {
+    // ajax, looking at url: '/tweets with get method
+    $.ajax({url: '/tweets', method: 'GET' })
+    // res = results, passing into renderTweets(res)
+    .then(res => renderTweets(res))
+    // if error, console.log error
+    .catch(error => console.log(`Error: `, error))
+  };
+
+  loadTweets();
 });
