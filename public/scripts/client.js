@@ -3,25 +3,25 @@ $(document).ready(function () {
   const data = [
     {
       user: {
-        name: "Newton",
+        name: "Deckard Cain",
         avatars: "https://img.icons8.com/nolan/30/fox.png",
-        handle: "@SirIsaac",
+        handle: "@Cain",
       },
       content: {
-        text: "If I have seen further it is by standing on the shoulders of giants",
+        text: "Stay awhile and listen!",
       },
-      created_at: 1461116232227,
+      created_at: 1631844278000,
     },
     {
       user: {
-        name: "Descartes",
+        name: "Solaire",
         avatars: "https://img.icons8.com/nolan/30/black-jaguar.png",
-        handle: "@rd",
+        handle: "@SolOfAstoria",
       },
       content: {
-        text: "Je pense , donc je suis",
+        text: "Praise the Sun!",
       },
-      created_at: 1461113959088,
+      created_at: 1631844220000,
     },
   ];
 
