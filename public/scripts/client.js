@@ -28,17 +28,20 @@ $(document).ready(function () {
   const $tweet = $(`<article class="tweet">Hello world</article>`);
 
   const renderTweets = function(dataTweet) {
+    // loop through argument passed into this function
     for (const tweetDetails of dataTweet) {
+      // create a variable to store output of createTweetElement with this function's argument
       const tweetData = createTweetElement(tweetDetails)
+      // append to .other-tweets section with what was created in tweetData
       $(".other-tweets").append(tweetData); 
     }
   };
   
   const createTweetElement = function(tweet) {
+    // timeAgo function using data pulled from the database containing an array of objects
     const timeStamp = timeago.format(tweet.created_at);
 
     return `
-    
     <article class="other-tweet">
       <header class="other-tweet-header">
         <img src=${tweet.user.avatars}/>
@@ -57,22 +60,12 @@ $(document).ready(function () {
         <i id="icon-heart" class="fas fa-heart"></i>
       </div>
     </footer>
-
-    </article>`
+    </article>
+    `
   };
-
 
   renderTweets(data);
 });
-
-// TIME AGO
-// document.getElementById("other-tweet-footer").innerHTML = timeStamp;
-
-// $(document).ready(function() {
-//   $.getJSON( "../server/data-files/initial-tweets.json", function( data ) {
-//   })
-
-// });
 
 /*
  * Client-side JS logic goes here
