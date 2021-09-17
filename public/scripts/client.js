@@ -49,34 +49,36 @@ $(document).ready(function () {
   };
 
   const errorHandler = function(err) {
-    if (err === "empty") {
-      $('.alert-message').append('<p>Please enter a message!</p>')
+    if (err === 'maxChar') {
+      $('.alert-message').empty().append('<p>ERROR: Message is too long! 140 Character limit!</p>')
     }
 
-    if (err === 'maxChar') {
-      $('.alert-message').append('<p>Message is too long! 140 Character limit!</p>')
+    if (err === 'empty') {
+      $('.alert-message').empty().append('<p>ERROR: Please enter a message!</p>')
     }
   };
 
+  // Function to take .JSON data from /tweets to pass
+  const postTweet = function(newTweetPost) {
+    $.ajax({url: '/tweets', method: 'POST', data: newTweetPost})
+    .then($('.other-tweets').empty(), loadTweets())
+  };
+
+  // Handler to take care of Submit (Tweet) button functionality
   const submitHandler = function(event) {
     event.preventDefault();
-    let string = $('#text-box').val();
+    let textBoxInput = $('#text-box').val();
     const data = $( this ).serialize();
-    if (string.length > 140) {
+
+    if (textBoxInput.length > 140) {
       errorHandler('maxChar')
-    } else if (string.length === 0) {
+    } else if (textBoxInput.length === 0) {
       errorHandler('empty')
     } else {
       postTweet(data)
     }
   };
 
-  const postTweet = function(newTweetPost) {
-    $.ajax({url: '/tweets', method: 'POST', data: newTweetPost})
-    .then($('.other-tweets').empty(), loadTweets())
-  };
-
   $('form').on('submit', submitHandler);
-
   loadTweets();
 });
