@@ -21,11 +21,9 @@ $(document).ready(function() {
         <div class="user-name"><b>${tweet.user.name}</b></div>
         <div class="tweeter-handle">${tweet.user.handle}</div>
       </header>
-
     <div class="other-tweet-body">
       ${tweet.content.text}
     </div>
-
     <footer class="other-tweet-footer"><b>${timeStamp}</b>
       <div class="message-icon">
         <i id="icon-flag" class="fas fa-flag"></i>
@@ -61,15 +59,17 @@ $(document).ready(function() {
   // Function to take .JSON data from /tweets to pass
   const postTweet = function(newTweetPost) {
     $.ajax({url: '/tweets', method: 'POST', data: newTweetPost})
-    // set .other-tweets to empty to prevent duplicate messages
-      .then($('.other-tweets').empty(),
+    .then(() => {
+      // set .other-tweets to empty to prevent duplicate messages
+      $('.other-tweets').empty();
       // set #text-box to empty on successful submission
-        $('#text-box').val(""),
-        // remove .alert-message if it existed
-        $('.alert-message').empty(),
-        // set #counter value back up to 140
-        $('#counter').first().val(140),
-        loadTweets());
+      $('#text-box').val("");
+      // remove .alert-message if it existed
+      $('.alert-message').empty();
+      // set #counter value back up to 140
+      $('#counter').first().val(140);
+      loadTweets();
+    });
   };
 
   // Handler to take care of Submit (Tweet) button functionality
