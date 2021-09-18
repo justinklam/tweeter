@@ -44,6 +44,8 @@
   display: block;
   padding: 0.5em 0;
   border-bottom:1px solid #45A29E;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 /* other-tweet footer area */
