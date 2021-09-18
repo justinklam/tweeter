@@ -1,14 +1,12 @@
-$(document).ready(function () {
-
-  const $tweet = $(`<article class="tweet">Hello world</article>`);
+$(document).ready(function() {
 
   const renderTweets = function(dataTweet) {
     // loop through argument passed into this function
     for (const tweetDetails of dataTweet) {
       // create a variable to store output of createTweetElement with this function's argument
-      const tweetData = createTweetElement(tweetDetails)
+      const tweetData = createTweetElement(tweetDetails);
       // append to .other-tweets section with what was created in tweetData
-      $(".other-tweets").prepend(tweetData); 
+      $(".other-tweets").prepend(tweetData);
     }
   };
   
@@ -36,46 +34,56 @@ $(document).ready(function () {
       </div>
     </footer>
     </article>
-    `
+    `;
   };
 
+  // Function to render tweets
   const loadTweets = function() {
     // ajax, looking at url: '/tweets with get method
     $.ajax({url: '/tweets', method: 'GET' })
     // result = results, passing into renderTweets(result)
-    .then(result => renderTweets(result))
+      .then(result => renderTweets(result))
     // if error, console.log error
-    .catch(error => console.log(`Error: `, error))
+      .catch(error => console.log(`Error: `, error));
   };
 
+  // Function to handle error messages
   const errorHandler = function(err) {
     if (err === 'maxChar') {
-      $('.alert-message').empty().append('<p>ERROR: Message is too long! 140 Character limit!</p>')
+      $('.alert-message').empty().append('<p>ERROR: Message is too long! 140 Character limit!</p>');
     }
 
     if (err === 'empty') {
-      $('.alert-message').empty().append('<p>ERROR: Please enter a message!</p>')
+      $('.alert-message').empty().append('<p>ERROR: Please enter a message!</p>');
     }
   };
 
   // Function to take .JSON data from /tweets to pass
   const postTweet = function(newTweetPost) {
     $.ajax({url: '/tweets', method: 'POST', data: newTweetPost})
-    .then($('.other-tweets').empty(), loadTweets())
+    // set .other-tweets to empty to prevent duplicate messages
+      .then($('.other-tweets').empty(),
+      // set #text-box to empty on successful submission
+        $('#text-box').val(""),
+        // remove .alert-message if it existed
+        $('.alert-message').empty(),
+        // set #counter value back up to 140
+        $('#counter').first().val(140),
+        loadTweets());
   };
 
   // Handler to take care of Submit (Tweet) button functionality
   const submitHandler = function(event) {
     event.preventDefault();
     let textBoxInput = $('#text-box').val();
-    const data = $( this ).serialize();
+    const data = $(this).serialize();
 
     if (textBoxInput.length > 140) {
-      errorHandler('maxChar')
+      errorHandler('maxChar');
     } else if (textBoxInput.length === 0) {
-      errorHandler('empty')
+      errorHandler('empty');
     } else {
-      postTweet(data)
+      postTweet(data);
     }
   };
 
