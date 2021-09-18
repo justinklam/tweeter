@@ -9,6 +9,12 @@ $(document).ready(function() {
       $(".other-tweets").prepend(tweetData);
     }
   };
+
+  const escape = function (str) {
+    let span = document.createElement("span");
+    span.appendChild(document.createTextNode(str));
+    return span.innerHTML;
+  };
   
   const createTweetElement = function(tweet) {
     // timeAgo function using data pulled from the database containing an array of objects
@@ -22,7 +28,7 @@ $(document).ready(function() {
         <div class="tweeter-handle">${tweet.user.handle}</div>
       </header>
     <div class="other-tweet-body">
-      ${tweet.content.text}
+    ${escape(tweet.content.text)}
     </div>
     <footer class="other-tweet-footer"><b>${timeStamp}</b>
       <div class="message-icon">
