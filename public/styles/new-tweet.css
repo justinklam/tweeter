@@ -56,3 +56,8 @@ main button {
 main button:hover {
   box-shadow: 1px 1px #b5f7f7
 }
+
+/* Message Alert for Alerts */
+.alert-message {
+  color: rgb(184, 66, 66);
+}

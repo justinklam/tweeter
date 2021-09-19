@@ -31,8 +31,3 @@ body {
   justify-content: center;
   align-self: center;
 }
-
-/* Message Alert for Alerts */
-.alert-message {
-  color: rgb(184, 66, 66);
-}
