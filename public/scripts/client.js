@@ -67,17 +67,17 @@ $(document).ready(function() {
   // Function to take .JSON data from /tweets to pass
   const postTweet = function(newTweetPost) {
     $.ajax({url: '/tweets', method: 'POST', data: newTweetPost})
-    .then(() => {
-      // set .other-tweets to empty to prevent duplicate messages
-      $('.other-tweets').empty();
-      // set #text-box to empty on successful submission
-      $('#text-box').val("");
-      // remove .alert-message if it existed
-      $('.alert-message').empty();
-      // set #counter value back up to 140
-      $('#counter').first().val(140);
-      loadTweets();
-    });
+      .then(() => {
+        // set .other-tweets to empty to prevent duplicate messages
+        $('.other-tweets').empty();
+        // set #text-box to empty on successful submission
+        $('#text-box').val("");
+        // remove .alert-message if it existed
+        $('.alert-message').empty();
+        // set #counter value back up to 140
+        $('#counter').first().val(140);
+        loadTweets();
+      });
   };
 
   // Handler to take care of Submit (Tweet) button functionality
@@ -98,6 +98,6 @@ $(document).ready(function() {
   $('form').on('submit', submitHandler);
   $('#text-box').on('keyup', () => {
     $('.alert-message').slideUp("slow");
-  })
+  });
   loadTweets();
 });
