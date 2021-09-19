@@ -1,3 +1,4 @@
+
 /* Other-Tweet section */
 .other-tweets {
   /* height: 165px; */
@@ -30,6 +31,7 @@
 .user-name {
   display: inline-block;
   margin: 0 0.5rem;
+  color: #66FCF1;
 }
 
 /* header - tweeter-handle area */
