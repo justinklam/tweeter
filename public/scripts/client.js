@@ -6,12 +6,12 @@ $(document).ready(function() {
       // create a variable to store output of createTweetElement with this function's argument
       const tweetData = createTweetElement(tweetDetails);
       // append to .other-tweets section with what was created in tweetData
-      $(".other-tweets").prepend(tweetData);
+      $('.other-tweets').prepend(tweetData);
     }
   };
 
   const escape = function (str) {
-    let span = document.createElement("span");
+    let span = document.createElement('span');
     span.appendChild(document.createTextNode(str));
     return span.innerHTML;
   };
@@ -71,7 +71,7 @@ $(document).ready(function() {
         // set .other-tweets to empty to prevent duplicate messages
         $('.other-tweets').empty();
         // set #text-box to empty on successful submission
-        $('#text-box').val("");
+        $('#text-box').val('');
         // remove .alert-message if it existed
         $('.alert-message').empty();
         // set #counter value back up to 140
