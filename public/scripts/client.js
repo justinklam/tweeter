@@ -54,13 +54,13 @@ $(document).ready(function() {
   // Function to handle error messages
   const errorHandler = function(err) {
     if (err === 'maxChar') {
-      $('.alert-message').empty().append('<p><img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-warning-construction-and-tools-kiranshastry-gradient-kiranshastry.png"/> ERROR: Message is too long! 140 Character limit!</p>');
-      $('.alert-message').slideDown();
+      $('.alert-message').empty().append('<p><i class="fas fa-exclamation-triangle"></i> ERROR: Message is too long! 140 Character limit!</p>');
+      $('.alert-message').slideDown('slow');
     }
 
     if (err === 'empty') {
-      $('.alert-message').empty().append('<p><img src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/30/000000/external-warning-construction-and-tools-kiranshastry-gradient-kiranshastry.png"/> ERROR: Please enter a message!</p>');
-      $('.alert-message').slideDown();
+      $('.alert-message').empty().append('<p><i class="fas fa-exclamation-triangle"></i> ERROR: Please enter a message!</p>');
+      $('.alert-message').slideDown('slow');
     }
   };
 
@@ -97,7 +97,7 @@ $(document).ready(function() {
 
   $('form').on('submit', submitHandler);
   $('#text-box').on('keyup', () => {
-    $('.alert-message').slideUp("slow");
+    $('.alert-message').slideUp('slow');
   });
   loadTweets();
 });
