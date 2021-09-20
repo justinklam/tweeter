@@ -96,8 +96,25 @@ $(document).ready(function() {
   };
 
   $('form').on('submit', submitHandler);
+
+  // On click event listener to display/hide new-tweet
+  $('#nav-button').on('click', () => {
+    if ($('#new-tweet-id').hasClass('hidden-tweet')) {
+      $('#new-tweet-id').slideDown('slow', function() {
+        $(this).css('display', 'flex');
+        $(this).removeClass('hidden-tweet');
+      });
+    } else {
+      $('#new-tweet-id').slideUp('slow', function() {
+        $(this).addClass('hidden-tweet');
+      });
+    }
+  });
+  
+  // #text-box event listener to remove alert-message when typing
   $('#text-box').on('keyup', () => {
     $('.alert-message').slideUp('slow');
   });
+  
   loadTweets();
 });

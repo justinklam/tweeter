@@ -59,7 +59,7 @@
       </div>
 
       <div class="nav-right">
-        <button class="new-tweet" type="button"><b>Create Tweet</b></button>
+        <button id="nav-button" class="new-tweet" type="button"><b>Create Tweet</b></button>
         <i class="fas fa-angle-double-down fa-lg"></i>
       </div>
     </nav>
@@ -86,14 +86,14 @@
       </div>
 
       <!-- NEW TWEET -->
-      <section class="new-tweet">
+      <section id="new-tweet-id" class="new-tweet hidden-tweet">
         <h2><i class="far fa-comment"></i> New Tweet</h2>
         <form id="submit-form" method="POST" action="/tweets">
           <label for="tweet-text"></label>
           <textarea name="text" id="text-box" placeholder="Enter Text"></textarea>
           <div class="text-area">
-            <button id = "tweet-button" name="tweet-button" type="submit">Tweet</button>
-            <output id = "counter" name="counter" class="counter" for="tweet-text">140</output>
+            <button id = "tweet-button" type="submit">Tweet</button>
+            <output id = "counter" class="counter" for="tweet-text">140</output>
           </div>
       <!-- Alert-Message for Errors -->
         <div class="alert-message">

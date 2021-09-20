@@ -17,6 +17,10 @@ main {
   color: #66FCF1;
 }
 
+.hidden-tweet {
+  display: none;
+}
+
 nav button {
   background-color: transparent;
   background-repeat: no-repeat;
