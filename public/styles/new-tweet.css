@@ -14,6 +14,17 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-self: center;
+  color: #66FCF1;
+}
+
+nav button {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  margin-bottom: 15px;
+  color: #66FCF1;
+  cursor: pointer;
 }
 
 /* New Tweet - Title area */
