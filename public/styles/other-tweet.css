@@ -32,6 +32,7 @@
   display: inline-block;
   margin: 0 0.5rem;
   color: #66FCF1;
+  font-size: 1.20em;
 }
 
 /* header - tweeter-handle area */
@@ -39,6 +40,7 @@
   display: inline-block;
   margin: 0 0.5rem;
   position: absolute; right: 0.5rem;
+  font-size: 0.75em;
 }
 
 /* body area - area for message */
@@ -48,6 +50,7 @@
   border-bottom:1px solid #45A29E;
   word-wrap: break-word;
   word-break: break-all;
+  font-size: 1em;
 }
 
 /* other-tweet footer area */

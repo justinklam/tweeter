@@ -96,3 +96,11 @@ main button:hover {
 .alert-message {
   color: rgb(184, 66, 66);
 }
+
+
+/* Media Queries */
+/* @media screen and (min-width: 768px) {
+  .new-tweet {
+    border: 10px solid red !important;
+  }
+} */

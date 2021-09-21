@@ -24,8 +24,8 @@ $(document).ready(function() {
     <article class="other-tweet">
       <header class="other-tweet-header">
         <img src=${tweet.user.avatars}/>
-        <div class="user-name"><b>${tweet.user.name}</b></div>
         <div class="tweeter-handle">${tweet.user.handle}</div>
+        <div class="user-name"><b>${tweet.user.name}</b></div>
       </header>
     <div class="other-tweet-body">
     ${escape(tweet.content.text)}
