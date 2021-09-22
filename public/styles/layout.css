@@ -24,6 +24,12 @@ body {
   flex-direction: column;
 }
 
+/* Main area */
+main {
+  font-family: "Bungee";
+  margin-top: 5em;
+}
+
 /* Main area - Container class */
 .container {
   font-size: 100%;

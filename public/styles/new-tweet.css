@@ -1,8 +1,3 @@
-main {
-  font-family: "Bungee";
-  margin-top: 5em;
-}
-
 /* General New-Tweet class */
 .new-tweet {
   font-size: 90%;
@@ -17,6 +12,7 @@ main {
 .hidden-tweet {
   display: none;
 }
+
 
 nav button {
   background-color: transparent;
