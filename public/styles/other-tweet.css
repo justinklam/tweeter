@@ -14,6 +14,7 @@
   border: 3px solid #45A29E;
   margin-top: 30px;
   padding: 8px;
+  min-width: 320px;
 }
 
 /* other-tweet - hover effect */

@@ -1,10 +1,6 @@
 main {
   font-family: "Bungee";
-}
-
-/* Title - What are you on about? */
-.tweet-title {
-  font-size: 100%;
+  margin-top: 5em;
 }
 
 /* General New-Tweet class */
@@ -15,6 +11,7 @@ main {
   justify-content: space-between;
   align-self: center;
   color: #66FCF1;
+  min-width: 320px;
 }
 
 .hidden-tweet {
@@ -96,11 +93,3 @@ main button:hover {
 .alert-message {
   color: rgb(184, 66, 66);
 }
-
-
-/* Media Queries */
-/* @media screen and (min-width: 768px) {
-  .new-tweet {
-    border: 10px solid red !important;
-  }
-} */

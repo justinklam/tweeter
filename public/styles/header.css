@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5em;
+  margin-top: 9em;
+  padding: 2em;
 }
 
 /* Header Profile Picture location */
@@ -22,5 +23,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+/* Title - What are you on about? */
+.tweet-title {
+  font-size: 100%;
+  display: flex;
+
+  justify-content: center;
+
   align-items: center;
 }

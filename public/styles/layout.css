@@ -27,7 +27,62 @@ body {
 /* Main area - Container class */
 .container {
   font-size: 100%;
-  width: 45%;
+  width: 90%;
+  display: flex;
   justify-content: center;
   align-self: center;
 }
+
+/* Media Queries */
+
+/* Desktop mode when min-width > 768px*/
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #body-header {
+    width: 30%;
+    min-width: 320px;
+    max-width: 30vw;
+    outline: red solid 1px;
+  }
+
+  .container {
+    width: 70%;
+    flex-direction: column;
+    outline: blue solid 1px;
+  }
+
+  .new-tweet {
+    width: 80%;
+    outline: yellow solid 1px;
+  }
+
+  .other-tweet {
+    width: 80%;
+    outline: blue solid 1px;
+    align-self: center;
+  }
+}
+
+/* @media screen and (min-width: 1000px) {
+  .other-tweets, 
+  .new-tweet {
+    width: 80%;
+  }
+
+  .other-tweet {
+    justify-content: right;
+    width: 80%;
+  }
+
+  .container {
+    align-items: flex-start;
+    justify-content: right;
+    flex-direction: column;
+  }
+} */
+
+/* breakpoint 1000 - other-tweet shift right. 80% */
