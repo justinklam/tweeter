@@ -27,7 +27,7 @@ body {
 /* Main area */
 main {
   font-family: 'Bungee';
-  margin-top: 5em;
+  flex-direction: column;
 }
 
 /* Main area - Container class */
@@ -48,35 +48,38 @@ main {
     flex-direction: row;
   }
 
+  main {
+    margin-top: 5em;
+  }
+
   #body-header {
     width: 30%;
     min-width: 320px;
     max-width: 30vw;
-    outline: red solid 1px;
+    /* outline: red solid 1px; */
   }
 
   /* main .container */
   .container {
     width: 70%;
     flex-direction: column;
-    outline: blue solid 1px;
+    /* outline: blue solid 1px; */
   }
 
   .new-tweet {
     width: 80%;
-    outline: yellow solid 1px;
+    /* outline: yellow solid 1px; */
     align-self: center;
-    margin-left: 5em;
+    /* margin-left: 5em; */
   }
 
   .other-tweet {
     width: 80%;
-    outline: blue solid 1px;
+    /* outline: blue solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-self: center;
-    /* margin-left: 5em; */
   }
 }
 

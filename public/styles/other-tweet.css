@@ -2,6 +2,10 @@
 .other-tweets {
   padding: 15px;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* other-tweet article area */
@@ -12,7 +16,7 @@
   border: 3px solid #45A29E;
   margin-top: 30px;
   padding: 8px;
-  min-width: 320px;
+  width: 70%;
 }
 
 /* other-tweet - hover effect */
