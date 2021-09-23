@@ -56,25 +56,21 @@ main {
   .container {
     width: 70%;
     flex-direction: column;
-    outline: blue solid 1px;
   }
 
   #body-header {
     width: 30%;
     min-width: 320px;
     max-width: 30vw;
-    outline: red solid 1px;
   }
 
   .new-tweet {
     width: 80%;
-    outline: yellow solid 1px;
     align-self: center;
   }
 
   .other-tweet {
     width: 80%;
-    /* outline: blue solid 1px; */
     display: flex;
     flex-direction: column;
     justify-content: right;
