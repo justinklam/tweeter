@@ -39,6 +39,25 @@ main {
   align-self: center;
 }
 
+#scroll-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: #45A29E;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#scroll-button:hover {
+  background-color: #b5f7f7;
+  opacity: 0.9;
+  box-shadow: 3px 3px #45A29E
+}
+
 /* Media Queries */
 /* Desktop mode when min-width > 768px*/
 @media screen and (min-width: 768px) {

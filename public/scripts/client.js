@@ -95,6 +95,34 @@ $(document).ready(function() {
     }
   };
 
+  // Get #scroll-button to display
+  mybutton = document.getElementById("scroll-button");
+
+  // Button will show after 20px scroll down from top
+  window.onscroll = function() {scrollFunction()};
+
+  // Function to show/hide scroll-button depending on scroll position
+  const scrollFunction = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // Function to give #scroll-button area to return to on use
+  const topArea = function() {
+    // For Safari
+    document.body.scrollTop = 0;
+    // For Chrome, Firefox, IE and Opera
+    document.documentElement.scrollTop = 0;
+  }
+
+  // On click event listener for scroll-button
+  $('#scroll-button').on('click', () => {
+    topArea();
+  });
+
   $('form').on('submit', submitHandler);
 
   // On click event listener to display/hide new-tweet

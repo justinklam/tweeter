@@ -14,40 +14,6 @@
   display: none;
 }
 
-/* nav button */
-nav button {
-  background-color: transparent;
-  background-repeat: no-repeat;
-  outline: none;
-  border: none;
-  margin-bottom: 15px;
-  color: #66FCF1;
-  cursor: pointer;
-}
-
-/* nav button - hover */
-nav button:hover {
-  color: #b5f7f7;
-}
-
-/* nav button - before */
-nav button:before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color:#45A29E;
-  position: sticky;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-/* nav button - hover before */
-nav button:hover::before {
-  width: 100%;
-}
-
 /* new-tweet - Title area */
 .new-tweet h2 {
   border-bottom:2px solid #45A29E;
@@ -80,8 +46,9 @@ main button {
   font-weight: bold;
   background-color: #45A29E;
   border-radius: 8px;
-  padding: 8px;
+  padding: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /* tweet submit button - hover */
