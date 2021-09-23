@@ -53,7 +53,8 @@ main button {
 
 /* tweet submit button - hover */
 main button:hover {
-  box-shadow: 1px 1px #b5f7f7
+  box-shadow: 1px 1px #b5f7f7;
+  background-color: #b5f7f7;
 }
 
 /* alert-message for Alerts */

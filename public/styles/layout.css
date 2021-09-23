@@ -47,6 +47,7 @@ main {
   border: none;
   outline: none;
   background-color: #45A29E;
+  color: black;
   cursor: pointer;
   opacity: 0.5;
   z-index: 1;
