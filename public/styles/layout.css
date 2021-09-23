@@ -40,7 +40,6 @@ main {
 }
 
 /* Media Queries */
-
 /* Desktop mode when min-width > 768px*/
 @media screen and (min-width: 768px) {
   body {
