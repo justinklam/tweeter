@@ -60,7 +60,7 @@ main {
 }
 
 /* Media Queries */
-/* Desktop mode when min-width > 768px*/
+/* Desktop mode = min-width > 768px*/
 @media screen and (min-width: 768px) {
   body {
     display: flex;
@@ -77,6 +77,7 @@ main {
     flex-direction: column;
   }
 
+  /* header area for profile-pic/name section */
   #body-header {
     width: 30%;
     min-width: 320px;
@@ -94,5 +95,9 @@ main {
     flex-direction: column;
     justify-content: right;
     align-self: center;
+  }
+
+  #scroll-button {
+    padding: 20px;
   }
 }

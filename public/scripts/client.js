@@ -10,7 +10,7 @@ $(document).ready(function() {
     }
   };
 
-  const escape = function (str) {
+  const escape = function(str) {
     let span = document.createElement('span');
     span.appendChild(document.createTextNode(str));
     return span.innerHTML;
@@ -99,7 +99,9 @@ $(document).ready(function() {
   mybutton = document.getElementById("scroll-button");
 
   // Button will show after 20px scroll down from top
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {
+    scrollFunction();
+  };
 
   // Function to show/hide scroll-button depending on scroll position
   const scrollFunction = function() {
@@ -116,7 +118,7 @@ $(document).ready(function() {
     document.body.scrollTop = 0;
     // For Chrome, Firefox, IE and Opera
     document.documentElement.scrollTop = 0;
-  }
+  };
 
   // On click event listener for scroll-button
   $('#scroll-button').on('click', () => {
