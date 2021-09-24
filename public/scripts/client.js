@@ -133,10 +133,12 @@ $(document).ready(function() {
       $('#new-tweet-id').slideDown('slow', function() {
         $(this).css('display', 'flex');
         $(this).removeClass('hidden-tweet');
+        $('.alert-message').empty();
       });
     } else {
       $('#new-tweet-id').slideUp('slow', function() {
         $(this).addClass('hidden-tweet');
+        $('.alert-message').empty();
       });
     }
   });
