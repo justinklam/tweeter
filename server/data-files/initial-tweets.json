@@ -8,7 +8,7 @@
     "content": {
       "text": "Stay awhile and listen!"
     },
-    "created_at": 1632281958724
+    "created_at": 1632200601046
   },
   {
     "user": {
@@ -19,6 +19,17 @@
     "content": {
       "text": "Praise the Sun!"
     },
-    "created_at": 1632368358724
+    "created_at": 1632287001046
+  },
+  {
+    "user": {
+      "name": "Navi",
+      "avatars": "https://i.imgur.com/lRUnDgU.png",
+      "handle": "@NaviBest"
+    },
+    "content": {
+      "text": "Hey! Look! Listen!"
+    },
+    "created_at": 1632373401046
   }
 ]
