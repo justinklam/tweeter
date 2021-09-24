@@ -9,6 +9,16 @@ This project was created and published by Justin Lam (https://github.com/justink
 
 WARNING: It is not intended for use in production-grade software.
 
+## Final Product
+
+![main](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/main.png)
+![new-tweet](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/new-tweet-area.png)
+![error](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/error.png)
+![scroll-up](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/scroll-up.png)
+![responsive-design](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/responsive-design.png)
+![mobile-view](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/mobile-view.png)
+![mobile-scroll-up](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/mobile-scroll-up.png)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
