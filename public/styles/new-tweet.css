@@ -66,3 +66,8 @@ main button:hover {
 .alert-message {
   color: rgb(184, 66, 66);
 }
+
+/* alert-message icon */
+.alert-message i {
+  color: #b5f7f7;
+}
