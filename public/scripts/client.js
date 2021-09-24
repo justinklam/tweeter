@@ -54,12 +54,12 @@ $(document).ready(function() {
   // Function to handle error messages
   const errorHandler = function(err) {
     if (err === 'maxChar') {
-      $('.alert-message').empty().append('<p><i class="fas fa-exclamation-triangle"></i> ERROR: Message is too long! 140 Character limit!</p>');
+      $('.alert-message').empty().append('<p><i class="fas fa-exclamation-triangle"></i> Your message is too long! 140 Character limit!</p>');
       $('.alert-message').hide().slideDown('slow');
     }
 
     if (err === 'empty') {
-      $('.alert-message').empty().append('<p><i class="fas fa-exclamation-triangle"></i> ERROR: Please enter a message!</p>');
+      $('.alert-message').empty().append('<p><i class="fas fa-exclamation-triangle"></i> Please enter a message!</p>');
       $('.alert-message').hide().slideDown('slow');
     }
   };

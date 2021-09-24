@@ -42,6 +42,7 @@
   display: inline-block;
   margin: 0 0.5rem;
   position: absolute; right: 0.5rem;
+  font-family: 'Bungee';
   font-size: 0.75em;
   color: #FFCB9A;
 }
@@ -54,6 +55,7 @@
   word-wrap: break-word;
   word-break: break-all;
   font-size: 1em;
+  color: #66FCF1;
 }
 
 /* other-tweet footer area */

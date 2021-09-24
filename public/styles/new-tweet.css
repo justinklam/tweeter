@@ -10,6 +10,7 @@
   padding: 15px;
 }
 
+/* condition for new-tweet show/hide status */
 .hidden-tweet {
   display: none;
 }
@@ -17,6 +18,7 @@
 /* new-tweet - Title area */
 .new-tweet h2 {
   border-bottom:2px solid #45A29E;
+  font-family: 'Bungee';
 }
 
 /* new-tweet - bubble icon */
@@ -54,12 +56,18 @@ main button {
   padding: 10px;
   margin-top: 10px;
   cursor: pointer;
+  font-family: 'Bungee';
 }
 
 /* tweet submit button - hover */
 main button:hover {
   box-shadow: 1px 1px #b5f7f7;
   background-color: #b5f7f7;
+}
+
+/* character-counter styling */
+#counter {
+  font-family: 'Bungee';
 }
 
 /* alert-message for Alerts */
