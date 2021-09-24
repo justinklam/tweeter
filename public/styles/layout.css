@@ -46,7 +46,7 @@ main {
   right: 30px;
   border: none;
   outline: none;
-  background-color: #45A29E;
+  background-color: #FFCB9A;
   color: black;
   cursor: pointer;
   opacity: 0.5;
@@ -101,3 +101,14 @@ main {
     padding: 20px;
   }
 }
+
+/* Colors
+#66FCF1 - Lighter Green
+#45A29E - Stock Green
+#b5f7f7 - Textbox Very Light Green
+#1F2833 - Black
+#0B0C10 - Nav Bar Black
+#FFCB9A - Accent Gold
+RGB(184, 66, 66) - Alert Red
+white - Stock White
+ */

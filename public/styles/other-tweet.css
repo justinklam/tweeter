@@ -20,7 +20,7 @@
 
 /* other-tweet - hover effect */
 .other-tweet:hover {
-  box-shadow: 3px 3px #45A29E
+  box-shadow: 3px 3px #45A29E;
 }
 
 /* other-tweet header area */
@@ -43,13 +43,14 @@
   margin: 0 0.5rem;
   position: absolute; right: 0.5rem;
   font-size: 0.75em;
+  color: #FFCB9A;
 }
 
 /* body area - area for message */
 .other-tweet-body {
   display: block;
   padding: 0.5em 0;
-  border-bottom:1px solid #45A29E;
+  border-bottom:1px solid #FFCB9A;
   word-wrap: break-word;
   word-break: break-all;
   font-size: 1em;
@@ -58,6 +59,7 @@
 /* other-tweet footer area */
 .other-tweet-footer {
   display: block;
+  margin-top: 0.5em;
 }
 
 /* footer - message icons */
