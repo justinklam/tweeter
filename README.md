@@ -28,15 +28,15 @@ WARNING: It is not intended for use in production-grade software.
 
 ## Dependencies
 
-- Express - 4.13.4 +
-- Node - 5.10.x +
-- Body-Parser - 1.15.2 +
-- Chance - 1.0.2 +
-- md5 - 2.1.0 +
+- Express - ^4.13.4
+- Node - ^5.10.x
+- Body-Parser - ^1.15.2
+- Chance - ^1.0.2
+- md5 - ^2.1.0
 
 ## DEV Dependencies
-- nodemon - 1.9.2 +
-- morgan - 1.10.0 +
+- nodemon - ^1.9.2
+- morgan - ^1.10.0
 
 ## Directory
 - Tweeter
