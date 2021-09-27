@@ -16,7 +16,7 @@ WARNING: It is not intended for use in production-grade software.
 ![error](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/error.png)
 ![scroll-up](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/scroll-up.png)
 ![responsive-design](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/responsive-design.png)
-![mobile-view](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/mobile-view.png)
+![mobile-view](https://github.com/justinklam/tweeter/blob/master/docs/mobile-view-update.png)
 ![mobile-scroll-up](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/mobile-scroll-up.png)
 
 ## Getting Started
