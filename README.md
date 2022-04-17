@@ -23,7 +23,7 @@ WARNING: It is not intended for use in production-grade software.
 ![responsive-design](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/responsive-design.png)
 ### Mobile View
 ![mobile-view](https://github.com/justinklam/tweeter/blob/master/docs/mobile-view-update.png)
-### Mobile Scrll-Up
+### Mobile Scroll-Up
 ![mobile-scroll-up](https://raw.githubusercontent.com/justinklam/tweeter/master/docs/mobile-scroll-up.png)
 
 ## Getting Started
