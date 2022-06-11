@@ -85,12 +85,13 @@ $(document).ready(function() {
       });
   };
 
-  // Handler to take care of Submit (Tweet) button functionality
+  // Handler when Submit (Tweet) button is clicked
   const submitHandler = function(event) {
     event.preventDefault();
     let textBoxInput = $('#text-box').val();
     const data = $(this).serialize();
 
+    // conditional check for text length
     if (textBoxInput.length > 140) {
       errorHandler('maxChar');
     } else if (textBoxInput.length === 0) {
