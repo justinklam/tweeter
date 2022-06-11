@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  // function that loads createTweetElement with the data needed to render
+  // Function that loads createTweetElement with the data needed to render
   const renderTweets = function(dataTweet) {
     // loop through dataTweet argument passed into this function
     for (const tweetDetails of dataTweet) {
@@ -17,6 +17,7 @@ $(document).ready(function() {
     return span.innerHTML;
   };
   
+  // Function that loads the HTML file with new Tweet data from renderTweets
   const createTweetElement = function(tweet) {    
     // timeAgo function using data pulled from the database consisting of an array of objects
     const timeStamp = timeago.format(tweet.created_at);
@@ -28,30 +29,30 @@ $(document).ready(function() {
         <div class="tweeter-handle">${tweet.user.handle}</div>
         <div class="user-name"><b>${tweet.user.name}</b></div>
       </header>
-    <div class="other-tweet-body">
-    ${escape(tweet.content.text)}
-    </div>
-    <footer class="other-tweet-footer"><b>${timeStamp}</b>
-      <div class="message-icon">
-        <i id="icon-flag" class="fas fa-flag"></i>
-        <i id="icon-retweet" class="fas fa-retweet"></i>
-        <i id="icon-heart" class="fas fa-heart"></i>
-      </div>
-    </footer>
+
+      <body class="other-tweet-body">
+        ${escape(tweet.content.text)}
+      </body>
+
+      <footer class="other-tweet-footer"><b>${timeStamp}</b>
+        <div class="message-icon">
+          <i id="icon-flag" class="fas fa-flag"></i>
+          <i id="icon-retweet" class="fas fa-retweet"></i>
+          <i id="icon-heart" class="fas fa-heart"></i>
+        </div>
+      </footer>
     </article>
     `;
   };
-  // line 30, replace div with body
-  // header class can be removed on line 25
+  // header class can be removed on line 27
 
-  // Function to render tweets
+  // Function to render tweets on successful GET request
   const loadTweets = function() {
     // ajax, looking at url: '/tweets with get method
     // http get request to server at /tweets
     $.ajax({url: '/tweets', method: 'GET' })
-    // result = results, passing into renderTweets(result)
+    // result = passing results into renderTweets(result)
       .then(result => renderTweets(result))
-    // if error, console.log error
       .catch(error => console.log(`Error: `, error));
   };
 
