@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
+  // function that loads createTweetElement with the data needed to render
   const renderTweets = function(dataTweet) {
-    // loop through argument passed into this function
+    // loop through dataTweet argument passed into this function
     for (const tweetDetails of dataTweet) {
       // create a variable to store output of createTweetElement with this function's argument
       const tweetData = createTweetElement(tweetDetails);
-      // append to .other-tweets section with what was created in tweetData
+      // prepend the tweetData variable to .other-tweets section on the page
       $('.other-tweets').prepend(tweetData);
     }
   };
@@ -16,8 +17,8 @@ $(document).ready(function() {
     return span.innerHTML;
   };
   
-  const createTweetElement = function(tweet) {
-    // timeAgo function using data pulled from the database containing an array of objects
+  const createTweetElement = function(tweet) {    
+    // timeAgo function using data pulled from the database consisting of an array of objects
     const timeStamp = timeago.format(tweet.created_at);
 
     return `
@@ -40,10 +41,13 @@ $(document).ready(function() {
     </article>
     `;
   };
+  // line 30, replace div with body
+  // header class can be removed on line 25
 
   // Function to render tweets
   const loadTweets = function() {
     // ajax, looking at url: '/tweets with get method
+    // http get request to server at /tweets
     $.ajax({url: '/tweets', method: 'GET' })
     // result = results, passing into renderTweets(result)
       .then(result => renderTweets(result))
